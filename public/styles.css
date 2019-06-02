@@ -1,0 +1,11 @@
+
+html, body, #images {
+	height:100%;
+	margin: 0;
+  width: 100%;
+}
+
+.myService {
+  display: grid;
+	grid-gap: 0px;
+}
