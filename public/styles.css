@@ -135,7 +135,7 @@ html, body, .images, .carousel {
 
 /* Front page styling */
 
-.bookNreviews {
+.bookDescReviews {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -144,6 +144,10 @@ html, body, .images, .carousel {
 .review {
   max-width: 60%;
   max-height: 60%;
+}
+
+#description {
+  padding-left: 200px;
 }
 
 #reviews {
