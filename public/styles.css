@@ -1,11 +1,161 @@
+html, body, .images, .carousel {
+  height: 100%;
+  margin: 0;
+  width: 100%; }
 
-html, body, #images {
-	height:100%;
-	margin: 0;
-  width: 100%;
-}
+.image-slide {
+  height: 500px;
+  transition: background-image .3s ease-in-out; }
 
-.myService {
+.slide-arrow {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+  top: 50%; }
+
+.slide-arrow.right {
+  right: 1rem; }
+
+.slide-arrow.left {
+  left: 1rem; }
+
+.wrapper {
   display: grid;
-	grid-gap: 0px;
+  grid-gap: 0px;
+  grid-template-columns: repeat(4, [col] auto);
+  grid-template-rows: repeat(2, [row] auto);
+  background-color: black;
+  border: solid black 2px; }
+
+.box {
+  background-color: black;
+  border-radius: 0px;
+  padding: 1px; }
+
+.box .box {
+  background-color: black; }
+
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
+  max-height: 435px;
+  max-width: 100%;
+  overflow: hidden; }
+
+.b {
+  grid-column: col 4 / span 2;
+  grid-row: row 1;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr; }
+
+.c {
+  grid-column: 1;
+  grid-row: 1; }
+
+.d {
+  grid-column: 2;
+  grid-row: 1; }
+
+.e {
+  grid-column: 1;
+  grid-row: 2; }
+
+.f {
+  grid-column: 2;
+  grid-row: 2; }
+
+.c, .d, .e, .f {
+  overflow: hidden;
+  max-height: 215px;
+  max-width: 100%; }
+
+.a:hover {
+  transition: 1000ms;
+  transform: scale(1.1, 1.1); }
+
+.c:hover {
+  transition: 1000ms;
+  transform: scale(1.1, 1.1); }
+
+.d:hover {
+  transition: 1000ms;
+  transform: scale(1.1, 1.1); }
+
+.e:hover {
+  transition: 1000ms;
+  transform: scale(1.1, 1.1); }
+
+.f:hover {
+  transition: 1000ms;
+  transform: scale(1.1, 1.1); }
+
+.interior {
+  margin: 0;
+  width: 100%; }
+
+.modal-window {
+  position: fixed;
+  background-color: #3d3838;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  overflow: fixed;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modal-window > div {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center;
+    color: white; }
+
+.modal-close {
+  color: white;
+  line-height: 50px;
+  font-size: 400%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none; }
+
+/* Front page styling */
+
+.bookNreviews {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
+
+.review {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+#reviews {
+  padding-left: 200px;
+}
+
+.book {
+  width: 40%;
+}
+
+#booking {
+  padding-left: 10px;
+  width: 800px;
+}
+/*# sourceMappingURL=styles.css.map */
